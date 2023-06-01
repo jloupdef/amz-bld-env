@@ -43,7 +43,6 @@ RUN wget -O /protobuf/protobuf-cpp-3.20.1.zip \
     https://github.com/protocolbuffers/protobuf/releases/download/v3.20.1/protobuf-cpp-3.20.1.zip
 RUN unzip /protobuf/protobuf-cpp-3.20.1.zip -d /protobuf
 RUN cp -r /protobuf/protobuf-3.20.1/src/* /protobuf/include
-ADD ./lib/libprotobuf.so /protobuf/lib/
 
 # Bring in the nlohmann json library
 RUN mkdir -p /nlohmann_json/include/nlohmann/ \
